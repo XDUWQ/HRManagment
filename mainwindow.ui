@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>500</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>700</height>
+     </size>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>481</width>
+       <height>511</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxSort">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>241</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>排序</string>
+     </property>
+     <widget class="QComboBox" name="ComboFile">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FileLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>排序字段</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="AscendBtn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>升序</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="DeacendBtn">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>降序</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxFillter">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>221</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>数据过滤</string>
+     </property>
+     <widget class="QRadioButton" name="ManBtn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>69</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>男</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="WomenBtn">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>69</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>女</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>69</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>全部显示</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>20</y>
+      <width>501</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>301</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="WechatEdit">
+        <property name="text">
+         <string>zhugedali0011</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="2">
+       <widget class="QDoubleSpinBox" name="WageEdit">
+        <property name="minimumSize">
+         <size>
+          <width>241</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <double>25000.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>1000000.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="NameEdit">
+        <property name="text">
+         <string>诸葛大力</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QComboBox" name="ProEdit">
+        <item>
+         <property name="text">
+          <string>北京市</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>陕西省</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>安徽省</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>天津市</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>浙江省</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>江苏省</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>广东省</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>福建省</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>辽宁省</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="DataLabel">
+        <property name="text">
+         <string>出生日期    </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QSpinBox" name="JobNumEdit">
+        <property name="minimum">
+         <number>100001</number>
+        </property>
+        <property name="maximum">
+         <number>1000000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QComboBox" name="DepEdit">
+        <item>
+         <property name="text">
+          <string>软件开发部</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>硬件开发部</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>销售部</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>划水部</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QSpinBox" name="HeightEdit"/>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLineEdit" name="CityEdit">
+        <property name="text">
+         <string>朝阳区</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="SexLabel">
+        <property name="text">
+         <string>性别</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLabel" name="EduLabel">
+        <property name="text">
+         <string>学历</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="HeightLabel">
+        <property name="text">
+         <string>身高</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="DepLabel">
+        <property name="text">
+         <string>部门</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="ProLabel">
+        <property name="text">
+         <string>省份</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QDateEdit" name="dateEdit"/>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLabel" name="CityLabel">
+        <property name="text">
+         <string>城市</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="JobNumLabel">
+        <property name="text">
+         <string>工号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="NameLabel">
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QComboBox" name="SexEdit">
+        <item>
+         <property name="text">
+          <string>女</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>男</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="WechatLabel">
+        <property name="text">
+         <string>微信号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QComboBox" name="EduEdit">
+        <item>
+         <property name="text">
+          <string>硕士研究生</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>博士研究生</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>本科生</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLabel" name="WageLabel">
+        <property name="text">
+         <string>工资</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QLabel" name="NoteLabel">
+        <property name="text">
+         <string>备注</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="2">
+       <widget class="QLineEdit" name="NoteEdit"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="PhotoLabel">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>40</y>
+       <width>161</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>照片</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>320</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>   照片</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>60</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="OpenAction"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="AddAction"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="Insertaction"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="DeleteAction"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="SetPhotoAction"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="SaveAction"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="CancleAction"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="AboutAction"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="VersionAction"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="ExitAction"/>
+  </widget>
+  <action name="OpenAction">
+   <property name="icon">
+    <iconset theme="打开文件"/>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开数据库</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="AddAction">
+   <property name="text">
+    <string>添加</string>
+   </property>
+   <property name="toolTip">
+    <string>在末尾添加记录</string>
+   </property>
+  </action>
+  <action name="Insertaction">
+   <property name="text">
+    <string>插入</string>
+   </property>
+   <property name="toolTip">
+    <string>插入记录</string>
+   </property>
+  </action>
+  <action name="DeleteAction">
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除一行</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="SetPhotoAction">
+   <property name="text">
+    <string>设置照片</string>
+   </property>
+  </action>
+  <action name="SaveAction">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="ExitAction">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="AboutAction">
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="toolTip">
+    <string>联系作者</string>
+   </property>
+  </action>
+  <action name="VersionAction">
+   <property name="text">
+    <string>版本信息</string>
+   </property>
+   <property name="toolTip">
+    <string>版本信息</string>
+   </property>
+  </action>
+  <action name="CancleAction">
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="toolTip">
+    <string>取消所有保存</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
