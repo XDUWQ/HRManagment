@@ -33,21 +33,34 @@ MainWindow::~MainWindow()
 //"打开"按键打开数据库
 void MainWindow::on_OpenAction_triggered()
 {
-    QString aFile=QFileDialog::getOpenFileName(this,QStringLiteral("选择数据库文件"),"",
-                                               QStringLiteral("SQLite数据库(*.db *.db3)"));
-    if(aFile.isEmpty()){//选择失败
-        QMessageBox::warning(this,QStringLiteral("警告"),QStringLiteral("未能正确选择数据库！"));
+    DB = QSqlDatabase::addDatabase("QSQLITE");
+    DB.setDatabaseName("demodb.db3");
+    if(!DB.open()){
+        QMessageBox::warning(this,QStringLiteral("错误"),QStringLiteral("打开数据库失败！"));
         return;
-    }else{
-        DB = QSqlDatabase::addDatabase("QSQLITE");
-        DB.setDatabaseName(aFile);//设置数据库名称
-        if(!DB.isOpen()){//数据库打开失败
-            QMessageBox::warning(this,QStringLiteral("错误"),QStringLiteral("打开数据库失败！"));
-            return;
-        }else{
-            openTable();//打开数据库
-        }
     }
+    openTable();
+    //自主打开文件存在bug
+//    QString aFile=QFileDialog::getOpenFileName(this,QStringLiteral("选择数据库文件"),"",
+//                                               QStringLiteral("SQLite数据库(*.db *.db3)"));
+//    if(aFile.isEmpty()){//选择失败
+//        QMessageBox::warning(this,QStringLiteral("警告"),QStringLiteral("未能正确选择数据库！"));
+//        return;
+//    }else{
+//        qDebug()<<aFile<<endl;
+//        //取出第三段……暂时没想到好的写法
+//        QString FileName=aFile.section("/",3,3);
+//        qDebug()<<FileName<<endl;
+//        DB=QSqlDatabase::addDatabase("QSQLITE"); //添加 SQL LITE数据库驱动
+//        DB.setDatabaseName(FileName);//居然还失败？？？
+////        DB.setDatabaseName(aFile);//设置数据库名称
+//        if(!DB.isOpen()){//数据库打开失败
+//            QMessageBox::warning(this,QStringLiteral("错误"),QStringLiteral("打开数据库失败！"));
+//            return;
+//        }else{
+//            openTable();//打开数据库
+//        }
+//    }
 }
 
 //"关于"键
